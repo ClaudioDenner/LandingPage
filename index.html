@@ -1,178 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#DC3545"/>
-        <script src="js/scriptLoad.js"></script>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/StyleMedium.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DC3545" />
+    <script src="js/scriptLoad.js"></script>
+    <script src="js/filter.js"></script>
 
-        <title>Lending Page</title>
 
-    </head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <body onload="load()" id="app" class="app">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/StyleMedium.css">
 
-        <div id="menu" class="menu">
-            <nav class="navbar navbar-expand-lg bg-danger fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">LogoMarca</a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Categorias
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">Action</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider"></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </li>
-                                </ul>
-                            </li>
+    <title>Landing Page</title>
 
-                        </ul>
+</head>
 
+<body onload="load()" id="app" class="app">
+
+    <div id="menu" class="menu">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LogoMarca</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        
+                    </ul>
                     </div>
-                </div>
-            </nav>
-        </div>
 
-        <div class="spinner" id="spinner">
-            <button class="btn btn-danger" type="button" disabled="disabled">
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Carregando, aguarde...
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="spinner" id="spinner">
+        <button class="btn btn-danger" type="button" disabled="disabled">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Carregando, aguarde...
+        </button>
+    </div>
+
+    <div class="carousel-size" id="carousel-size">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/products/assets/30.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/products/assets/50.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/products/assets/70.jfif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
 
-        <div class="carousel-size" id="carousel-size">
-            <div
-                id="carouselExampleAutoplaying"
-                class="carousel slide"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/products/assets/30.jfif" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/products/assets/50.jfif" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/products/assets/70.jfif" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="title-items">
-                <h1 class="display-2">
-                    <b>Novidades</b>
-                </h1>
-            </div>
-
+        <div class="title-items">
+            <h1 class="display-2">
+                <b>Catálogo</b>
+            </h1>
         </div>
 
-        <main id="main" class="container-main">
+    </div>
 
-            <section class="product" v-for="item in data">
+
+    <div class="popUpImg" id="popUpImg">
+        
+
+        <img src="img/products/assets/70.jfif" id="imgPopUp">
+        <div class="btn-popUp-close">
+        <button type="button" class="btn-close bg-danger btn-lg" aria-label="Close" onclick="downPopUpImg()"></button>
+        </div>
+    </div>
+
+    <div class="filters" id="filters">
+        <i>Filtros</i>
+
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="filter"
+            onchange="filter()">
+            <option value="all">Todos os ítens</option>
+            <option value="masculino">Gênero: masculino</option>
+            <option value="feminino">Gênero: feminino</option>
+            <option value="adulto">Faixa Etária: adulto</option>
+            <option value="infantil">Faixa Etária: infantil</option>
+
+        </select>
+
+    </div>
+
+    <main id="main" class="container-main">
+
+
+        <section class="product" v-for="item in data" :dataFilter="item.filtroClassificacao" id="product" >
+            
 
                 <div class="div-img-product">
 
-                    <img :src="item.urlImg" loading="lazy">
+                    <img :src="item.urlImg" loading="lazy" onclick="popUpImg()" id="ItemUrlImg">
                 </div>
 
                 <div class="div-description-product">
-                    <span>{{item.valor}}</span>
+
 
                     <span>{{item.nomeProduto}}</span>
-                    <span style="font-size: 14pt;color: blue ;">
+                    <span style="font-size: 14pt;color: rgb(0, 0, 0) ;">
                         <b>
                             R$
                             {{item.valor}}</b>
                     </span>
                     <span style="font-size: 9pt;">
                         <b>em até
-                            {{item.quantParcelasSemJuros}}
+                            {{item.quantParcelasSemJuros}}x
                             sem juros de R$
                             {{item.valor/item.quantParcelasSemJuros}}</b>
                     </span>
                     <div class="d-grid gap-2"></div>
-                    <a
-                        :href="item.urlWhatsapp+item.urlImg"
-                        class="btn btn-success"
-                        tabindex="-1"
-                        role="button"
-                        aria-disabled="true">
+                    <a :href="item.urlWhatsapp+item.urlImg" class="btn btn-success" tabindex="-1" role="button"
+                        aria-disabled="true" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                         Comprar</a>
                 </div>
+                <span class="alert-product"><b>Peça já!</b></span>
+            
 
-            </div>
+        
+
 
         </section>
 
+
+        </div>
     </main>
 
-    <li v-for="n in evenNumbers">{{ n }}</li>
+
 
     <script src="js/VueProject.js"></script>
+    <script src="js/popUpImg.js"></script>
+
+
+
+
+
 </body>
+
 </html>

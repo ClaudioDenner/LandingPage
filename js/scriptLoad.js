@@ -4,6 +4,8 @@ function load(){
     let spinner = document.getElementById("spinner")
     let carousel = document.getElementById("carousel-size")
     let menu = document.getElementById("menu")
+    let filters = document.getElementById("filters")
+
 
 
    
@@ -11,6 +13,8 @@ function load(){
     carousel.style.display = "block"
     main.style.display = "flex"
     spinner.style.display = "none"
+    filters.style.display = "block"
+
    
 
 

@@ -2,16 +2,17 @@ var data = [
     
     {
     id:'1',
-    genero:'feminino',
-    faixaEtaria:'infantil',
+    genero:'masculino',
+    faixaEtaria:'adulto',
     tipoProduto:'sandalia', 
     nomeProduto: 'Tênis Nike',
     descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     valor: 129.90,
     quantParcelasSemJuros: 2,
-    urlImg: "img/products/assets/1.jfif",
+    urlImg: "img/products/assets/60.jfif",
     tamanhos: '36 ao 40',
     urlWhatsapp: 'https://wa.me/5571981720488?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20',
+    filtroClassificacao: 'all/masculino/outros/sandalia'
     
 
     },
@@ -24,25 +25,26 @@ var data = [
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       valor: 129.90,
       quantParcelasSemJuros: 2,
-      urlImg: "img/products/assets/1.jfif",
+      urlImg: "img/products/assets/50.jfif",
       tamanhos: '36 ao 40',
       urlWhatsapp: 'https://wa.me/5571981720488?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20',
+      filtroClassificacao: 'all/feminino/infantil/sandalia'
       
   
       },
       {
         id:'3',
         genero:'feminino',
-        faixaEtaria:'infantil',
+        faixaEtaria:'adulto',
         tipoProduto:'sandalia', 
         nomeProduto: 'Tênis Nike',
         descricao: 'aqui tambem',
         valor: 129.90,
         quantParcelasSemJuros: 2,
-        urlImg: "img/products/assets/1.jfif",
+        urlImg: "img/products/assets/40.jfif",
         tamanhos: '36 ao 40',
         urlWhatsapp: 'https://wa.me/5571981720488?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20',
-        
+        filtroClassificacao: 'all/feminino/adulto/sandalia'
     
         },
         {
@@ -52,11 +54,12 @@ var data = [
           tipoProduto:'sandalia', 
           nomeProduto: 'Tênis Nike',
           descricao: 'deu certo',
-          valor: 129.90,
+          valor: 229.90,
           quantParcelasSemJuros: 2,
-          urlImg: "img/products/assets/1.jfif",
+          urlImg: "img/products/assets/30.jfif",
           tamanhos: '36 ao 40',
           urlWhatsapp: 'https://wa.me/5571981720488?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20',
+          filtroClassificacao: 'all/masculino/infantil/sandalia'
           
       
           },
@@ -84,9 +87,10 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      message: 'Hello Vue!',
       data: window.data,
-      numbers: [1, 2, 3, 4, 5,6,7,8],
+      awesome: true,
+      teste: true,
+      
 
     
     }
@@ -94,8 +98,11 @@ createApp({
   },
 
   computed: {
-    evenNumbers() {
-      return this.data.filter(n => {if(n.genero=='feminino'){console.log(n.descricao)}})
+    resultFilters() {
+      
+
+      return this.data.filter(results => {if(results.faixaEtaria=='a'){return results}})
     }
+
   }
 }).mount('#app')
