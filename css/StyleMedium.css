@@ -16,6 +16,20 @@
       }
 
 
+      @keyframes Fechar {
+        to {
+          font-size:20pt;
+        
+        }
+      
+        from {
+          font-size:10pt;
+        }
+
+        
+      }
+
+
 
 
 
@@ -54,12 +68,14 @@
     }
     .carousel-size{
         display: none;
+    
     }
 
     .carousel-size img{
        
-        width: 100vw;
-        height: 60vh;
+      
+        height: 50vh;
+        
         
 
     }
@@ -69,7 +85,7 @@
     .title-items{
 
         display: flex;
-        color: rgb(218, 64, 64);
+        color: rgb(41, 41, 41);
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -117,12 +133,19 @@
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         margin: 10px;
-        border: 1px solid   rgba(218, 64, 64, 0.5);
+        border: 1px solid   rgba(0, 0, 0, 0.082);
         padding-bottom: 10px;
 
         
     
     }
+
+    .product:hover{
+        box-shadow: 5px 5px 10px #00000048;
+        -webkit-box-shadow: 5px 5px 10px #00000048;
+        -moz-box-shadow: 5px 5px 10px #00000048;
+    }
+
 
     
     .div-img-product{
@@ -159,7 +182,7 @@
         align-items: center;
         flex-direction: column;
         padding: 10px;
-    
+        border-top: 5px  solid rgb(77, 190, 77);
     
     
     
@@ -208,8 +231,54 @@
         align-items: center;
         justify-content: center;
         font-size: 20pt;
+        position: absolute;
+        top: 7%;
+
+
+        animation-duration: 1s;
+        animation-name: Fechar;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
 
     }
+
+    .popUpImg-more-details{
+
+        background-color: rgba(0, 0, 0, 0.774);
+        color:white;
+        width: 100%;
+        position: absolute;
+        bottom: 1%;
+        text-align:left;
+        padding: 10px;
+
+        
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background-color: rgb(77, 190, 77);
+        color: white;
+        width: 100vw;
+        height: 40vh;
+        flex-direction: column;
+        padding-top: 15px;
+
+
+    }
+
+    .ref{
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 100%;
+        font-size: 7pt;
+        text-align: right;
+    }
+
+
 
 }
 
