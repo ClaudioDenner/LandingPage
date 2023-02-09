@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Variedade de calçados e preço super atrativo">
+    <meta name="description" content="Calçados, bolsas e acessórios">
     <meta name="author" content="ClaudioDenner">
-    <meta property="og:image" content="https://img1.gratispng.com/20180602/pkt/kisspng-logo-generic-drug-bank-clip-art-logo-business-5b129e3f1fa7c4.0678012315279468151297.jpg" />
+    <meta property="og:image" content="img/logo/logo.jpg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="red" />
-    <link rel="icon" type="image/png" href="https://img1.gratispng.com/20180602/pkt/kisspng-logo-generic-drug-bank-clip-art-logo-business-5b129e3f1fa7c4.0678012315279468151297.jpg"/>
+    <meta name="theme-color" content=" rgb(255, 184, 225)" />
+    <link rel="icon" type="image/png" href="img/logo/logo.jpg"/>
     <script src="js/scriptLoad.js"></script>
     <script src="js/filter.js"></script>
     
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/StyleLarge.css">
 
 
-    <title>Moshecalcados</title>
+    <title>AnaShoesSalvador</title>
 
 </head>
 
@@ -35,8 +35,9 @@
 
     <div id="menu" class="menu">
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
+
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Moshecalcados</a>
+                <a class="navbar-brand" href="#"><img alt="AnaShoesSalvador" src="img/logo/logo.jpg" style="width: 50px;height: 50px;border-radius: 50%;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -44,20 +45,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                        
+                            <a class="nav-link" href="#">ANASHOESSALVADOR</a>
+                        </li>   
                     </ul>
 
                     <span class="navbar-text">
-                        <a href="#" target="_blank"><i class="bi bi-instagram" style="margin-right: 10px; font-size: 16pt;"></i></a>
-                        <a href="#" target="_blank"><i class="bi bi-whatsapp" style="margin-right: 10px; font-size: 16pt;"></i></a>
+                        <a href="#contato" class="text-dark" style="margin-right: 15px;">Mais informações</a>
+                        <a href="https://instagram.com/anas.sshoes?igshid=ZDdkNTZiNTM=" target="_blank" class="text-dark"><i class="bi bi-instagram" style="margin-right: 15px; font-size: 16pt;"></i></a>
+                        <a href="#" target="_blank" class="text-dark"><i class="bi bi-whatsapp" style="margin-right: 15px; font-size: 16pt;"></i></a>
+                        
+
 
                         
                       </span>
@@ -79,13 +78,14 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/banners/banner01.jpg" class="img-fluid" alt="...">
+                    <img src="img/banners/a.png" class="img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/banners/banner02.jpg" class="img-fluid" alt="...">
+                    <img src="img/banners/b.png" class="img-fluid" alt="...">
+            
                 </div>
                 <div class="carousel-item">
-                    <img src="img/banners/banner03.jpg" class="img-fluid" alt="...">
+                    <img src="img/banners/c.png" class="img-fluid" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -101,8 +101,10 @@
         </div>
 
         <div class="title-items">
-            <h1 class="display-2">
+            
+            <h1 class="display-3">
                 <b>Catálogo</b>
+                <hr class="hr-title">
             </h1>
         </div>
 
@@ -112,17 +114,17 @@
     <div class="popUpImg" id="popUpImg">
         
         <div class="popUpImg-more-details">
-            Id: <span id="idProductDetails"></span>
+            <b>Id:</b> <span id="idProductDetails"></span>
             <br>
-            Nome do produto: <span id="nameProductDetails"></span>
+            <b>Nome do produto:</b> <span id="nameProductDetails"></span>
             <br>
-            Descrição: <span id="descricaoProductDetails"></span>
+            <b>Descrição:</b> <span id="descricaoProductDetails"></span>
             <br>
-            Grade tamanhos: <span id="tamanhosProductDetails"></span>
+            <b>Grade tamanhos:</b> <span id="tamanhosProductDetails"></span>
             <br>
-            Valor: <span id="valorProductDetails"></span>
+            <b>Valor:</b> <span id="valorProductDetails"></span>
             <br>
-            Divide em até: <span id="parcelasProductDetails"></span>
+            <b>Parcelamos em até:</b> <span id="parcelasProductDetails"></span>x
             <br>
 
 
@@ -208,9 +210,11 @@
         <i class="bi bi-whatsapp"></i>
         WhatsApp: (71) 99707-3343</p>
         </a>
+        <a href="https://instagram.com/anas.sshoes?igshid=ZDdkNTZiNTM=" class="h6 text-decoration-underline" target="_blank"><i class="bi bi-instagram" style="margin-right: 15px; font-size: 16pt;"></i>Instagram</a>
     </div>
     <div class="ref">
         Página desenvolvida por <a href="https://cdenner.com.br/" target="_blank">ClaudioDenner</a>
+        
     </div>
    
 </footer>

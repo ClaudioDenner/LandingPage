@@ -36,7 +36,7 @@
 
 
     body{
-        background-color: rgb(241, 241, 241);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,12 +72,16 @@
     }
     .carousel-size{
         display: none;
+        margin-top: 40px;
+        background-image: linear-gradient(to right, rgb(255, 184, 225), rgb(124, 255, 37));
     }
 
     .carousel-size img{
        
-        
-        height: 60vh;
+        margin-top: 40px;
+     
+        width: 100vw;
+    
         
 
     }
@@ -87,19 +91,24 @@
     .title-items{
 
         display: flex;
-        color: rgb(70, 68, 68);
+        color: rgb(63, 63, 63);
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 35px;
+        margin-top: 10px;
        
         background-color: #ffffff;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width: 80%;
+
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 10px;
+        padding-top:10px; 
         
+    }
+
+    .hr-title{
+        display: block;
     }
 
 
@@ -192,7 +201,9 @@
         align-items: center;
         flex-direction: column;
         padding: 10px;
-        border-top: 5px  solid rgb(77, 190, 77);
+        border-top: 5px  solid transparent;
+        border-image: linear-gradient(to right, rgb(255, 184, 225), rgb(124, 255, 37));
+        border-image-slice: 1;
     
     
     
@@ -233,7 +244,7 @@
     }
 
     .btn-popUp-close{
-        margin-top: 10px;
+        margin-top: 30px;
         background-color: white;
         border-radius: 50%;
         width: 80px;
@@ -267,13 +278,17 @@
 
         
     }
+    .popUpImg-more-details:hover{
+        background-color: rgba(0, 0, 0, 0.466);
+
+    }
 
 
     .contact{
         display: none;
         align-items: center;
         justify-content:space-between;
-        background-color: rgb(77, 190, 77);
+        background-image: linear-gradient(to right, rgb(255, 184, 225), rgb(124, 255, 37));
         color: white;
 
         flex-direction: column;
@@ -290,7 +305,7 @@
         text-align: right;
     }
 
-
+   
 
 
 
