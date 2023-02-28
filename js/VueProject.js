@@ -15,19 +15,34 @@ var data = [
    "urlDrive": "https://drive.google.com/file/d/1liBJPZa8B1GUb9ZOQcmzsj-mlQjzpa7H/view?usp=share_link"
   },
   {
-   "id": 1,
+   "id": 90,
    "genero": "masculino",
    "faixaEtaria": "adulto",
    "tipoProduto": "tênis",
    "nomeProduto": "Tênis Lacoste",
    "descricao": "Lacoste Sport",
    "tamanhos": "43",
-   "valor": 60.0,
+   "valor": 95.0,
    "quantParcelasSemJuros": 2,
    "filtroClassificacao": "all/masculino/adulto/tênis",
    "urlWhatsapp": "https://wa.me/557197073343?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20",
    "urlImg": "img/products/assets/img100.jpeg",
    "urlDrive": "https://drive.google.com/file/d/1d9qx0u1x-JSwwZsR-OHC5mUR0MHQiF4y/view?usp=share_link"
+  },
+   {
+   "id": 91,
+   "genero": "masculino",
+   "faixaEtaria": "adulto",
+   "tipoProduto": "tênis",
+   "nomeProduto": "Tênis Lacoste",
+   "descricao": "Lacoste Sport",
+   "tamanhos": "43",
+   "valor": 95.0,
+   "quantParcelasSemJuros": 2,
+   "filtroClassificacao": "all/masculino/adulto/tênis",
+   "urlWhatsapp": "https://wa.me/557197073343?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20",
+   "urlImg": "img/products/assets/img99.jpeg",
+   "urlDrive": "https://drive.google.com/file/d/1331PpdjdmS3Yh_MRwaY4sDqVMyw_BrXX/view?usp=share_link"
   },
   {
    "id": 2,
