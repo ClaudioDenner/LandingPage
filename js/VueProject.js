@@ -1290,6 +1290,21 @@ var data = [
    "urlDrive": "https://drive.google.com/file/d/1j61GC_CQcMqQaVGfaPV_NxEPR9fpHQIJ/view?usp=share_link"
   },
   {
+   "id": 90,
+   "genero": "masculino",
+   "faixaEtaria": "adulto",
+   "tipoProduto": "tênis",
+   "nomeProduto": "Tênis Lacoste",
+   "descricao": "Lacoste Sport",
+   "tamanhos": "43",
+   "valor": 60.0,
+   "quantParcelasSemJuros": 2,
+   "filtroClassificacao": "all/masculino/adulto/tênis",
+   "urlWhatsapp": "https://wa.me/557197073343?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20",
+   "urlImg": "img/products/assets/img100.jpeg",
+   "urlDrive": "https://drive.google.com/file/d/1y58zqs4wJWCMp5Roq_1b6VNwx5vIIg6e/view?usp=share_link"
+  },
+  {
    "id": 88,
    "genero": "feminino",
    "faixaEtaria": "infantil",
