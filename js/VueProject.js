@@ -14,6 +14,21 @@ var data = [
    "urlImg": "img/products/assets/1.jfif",
    "urlDrive": "https://drive.google.com/file/d/1liBJPZa8B1GUb9ZOQcmzsj-mlQjzpa7H/view?usp=share_link"
   },
+   {
+   "id": 92,
+   "genero": "masculino",
+   "faixaEtaria": "adulto",
+   "tipoProduto": "tênis",
+   "nomeProduto": "Combo Promocional",
+   "descricao": "Lacoste Sport",
+   "tamanhos": "43",
+   "valor": 179.90,
+   "quantParcelasSemJuros": 2,
+   "filtroClassificacao": "all/masculino/adulto/tênis",
+   "urlWhatsapp": "https://wa.me/557197073343?text=Olá!%20fiquei%20interessado(a)%20neste%20item:%20",
+   "urlImg": "img/products/assets/anuncio site.png",
+   "urlDrive": "https://drive.google.com/file/d/1vZyH1wMtH2i1ylPHdsTnT6o62ttCO0yM/view?usp=share_link"
+  },
   {
    "id": 90,
    "genero": "masculino",
